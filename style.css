@@ -38,13 +38,17 @@ body {
 
 /* Profile Photo */
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid yellow;
-  margin-bottom: 20px;
+  width: 120px;              /* smaller width */
+  height: 120px;             /* smaller height */
+  border-radius: 50%;        /* circular */
+  object-fit: cover;         /* crop nicely */
+  border: 3px solid yellow;  /* stylish border */
+  margin-bottom: 15px;
+  display: block;            /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* Navigation */
 .nav {
