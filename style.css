@@ -111,16 +111,16 @@ body {
 
 
 
-  /* Contact Links Styling */
+/* Contact Links Styling - Force White Color */
 a {
-  color: #FFD700; /* Golden yellow color */
+  color: #ffffff !important; /* Pure white */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #FFFFFF; /* Turns white when hovered */
+  color: #FFD700 !important; /* Golden yellow when hovered */
   text-decoration: underline;
 }
 
@@ -128,3 +128,4 @@ section a {
   font-size: 18px;
   margin-right: 15px;
 }
+
