@@ -1,4 +1,4 @@
-/* Reset & basics */
+/* Reset & Basics */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -22,14 +22,14 @@ body {
   margin: 5px 0;
 }
 
-/* Hero Contact Links (email, LinkedIn, Instagram) */
-.hero > p > a {
-  color: #ffffff !important;        /* Force white */
+/* Hero Top Links */
+.hero p a {
+  color: #ffffff !important;       /* White links */
   text-decoration: none !important;
   font-weight: bold;
 }
-.hero > p > a:hover {
-  color: #FFD700 !important;        /* Gold on hover */
+.hero p a:hover {
+  color: #FFD700 !important;       /* Gold on hover */
   text-decoration: underline !important;
 }
 
@@ -123,7 +123,7 @@ body {
   gap: 20px;
 }
 
-/* Section links - white with gold hover */
+/* Section Links (Other links inside sections) */
 .section a {
   color: #ffffff !important;
   text-decoration: none;
