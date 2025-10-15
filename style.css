@@ -7,23 +7,35 @@ body {
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #000;
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000;
+  }
+  .hero h1 {
+    color: yellow;
+    margin: 10px 0;
+  }
+  .hero p {
+    color: #fff;
+    margin: 5px 0;
+    /* Top Header / Hero Contact Links */
+.hero > p > a {
+  color: #ffffff !important;        /* Force white */
+  text-decoration: none !important;
+  font-weight: bold;
 }
-.hero h1 {
-  color: yellow;
-  margin: 10px 0;
+
+.hero > p > a:hover {
+  color: #FFD700 !important;        /* Gold on hover */
+  text-decoration: underline !important;
 }
-.hero p {
-  color: #fff;
-  margin: 5px 0;
-}
-.hero a.btn {
-  display: inline-block;
-  margin-top: 15px;
+
+  }
+  .hero a.btn {
+    display: inline-block;
+    margin-top: 15px;
   padding: 10px 20px;
   background-color: yellow;
   color: black;
