@@ -7,35 +7,36 @@ body {
   line-height: 1.6;
 }
 
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #000;
-  }
-  .hero h1 {
-    color: yellow;
-    margin: 10px 0;
-  }
-  .hero p {
-    color: #fff;
-    margin: 5px 0;
-    /* Top Header / Hero Contact Links */
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #000;
+}
+.hero h1 {
+  color: yellow;
+  margin: 10px 0;
+}
+.hero p {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Hero Contact Links (email, LinkedIn, Instagram) */
 .hero > p > a {
   color: #ffffff !important;        /* Force white */
   text-decoration: none !important;
   font-weight: bold;
 }
-
 .hero > p > a:hover {
   color: #FFD700 !important;        /* Gold on hover */
   text-decoration: underline !important;
 }
 
-  }
-  .hero a.btn {
-    display: inline-block;
-    margin-top: 15px;
+/* Hero button */
+.hero a.btn {
+  display: inline-block;
+  margin-top: 15px;
   padding: 10px 20px;
   background-color: yellow;
   color: black;
@@ -47,33 +48,19 @@ body {
 .hero a.btn:hover {
   background-color: #ffc107;
 }
-/* Hero links (email, LinkedIn, Instagram) */
-.hero a {
-  color: #ffffff;             /* White for hero links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.hero a:hover {
-  color: #FFD700;             /* Gold on hover */
-  text-decoration: underline;
-}
-
 
 /* Profile Photo */
 .profile-pic {
-  width: 120px;              /* smaller width */
-  height: 120px;             /* smaller height */
-  border-radius: 50%;        /* circular */
-  object-fit: cover;         /* crop nicely */
-  border: 3px solid yellow;  /* stylish border */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid yellow;
   margin-bottom: 15px;
-  display: block;            /* center horizontally */
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* Navigation */
 .nav {
@@ -136,16 +123,14 @@ body {
   gap: 20px;
 }
 
-/* Contact Links - White for section content only */
+/* Section links - white with gold hover */
 .section a {
-  color: #ffffff !important; /* White for body links */
+  color: #ffffff !important;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 .section a:hover {
-  color: #FFD700 !important; /* Gold when hovered */
+  color: #FFD700 !important;
   text-decoration: underline;
 }
-
