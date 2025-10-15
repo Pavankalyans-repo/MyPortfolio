@@ -35,6 +35,19 @@ body {
 .hero a.btn:hover {
   background-color: #ffc107;
 }
+/* Hero links (email, LinkedIn, Instagram) */
+.hero a {
+  color: #ffffff;             /* White for hero links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hero a:hover {
+  color: #FFD700;             /* Gold on hover */
+  text-decoration: underline;
+}
+
 
 /* Profile Photo */
 .profile-pic {
