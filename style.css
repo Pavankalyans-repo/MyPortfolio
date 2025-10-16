@@ -134,3 +134,27 @@ body {
   color: #FFD700 !important;
   text-decoration: underline;
 }
+/* Resume Button (Bottom of Page) */
+.resume-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #ffc107;
+  transform: translateY(-2px);
+}
+
