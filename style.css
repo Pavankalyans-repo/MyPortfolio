@@ -22,16 +22,20 @@ body {
   margin: 5px 0;
 }
 
-/* Hero Top Links */
+/* Hero Top Links - unified light grey, bold on hover */
 .hero p a {
-  color: #ffffff !important;       /* White links */
+  color: #CCCCCC !important;       /* Light grey for readability */
   text-decoration: none !important;
-  font-weight: bold;
+  font-weight: normal;
+  transition: 0.3s;
 }
+
 .hero p a:hover {
-  color: #FFD700 !important;       /* Gold on hover */
-  text-decoration: underline !important;
+  font-weight: bold;               /* Bold on hover */
+  color: #CCCCCC !important;       /* Keep same color */
+  text-decoration: none !important;
 }
+
 
 /* Hero button */
 .hero a.btn {
