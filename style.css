@@ -139,3 +139,22 @@ body {
   background: none;
   text-decoration: none;
 }
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: none; /* hidden by default */
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.go-top:hover {
+  background-color: #ffc107;
+  transform: translateY(-2px);
+}
