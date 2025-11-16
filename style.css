@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 20px 30px 20px; /* reduced bottom padding */
   background-color: #000;
 }
 .hero h1 {
@@ -29,7 +29,6 @@ body {
   font-weight: normal;
   transition: 0.3s;
 }
-
 .hero p a:hover {
   font-weight: bold;               /* Bold on hover */
   color: #CCCCCC !important;       /* Keep same color */
@@ -122,9 +121,9 @@ body {
   text-decoration: underline;
 }
 
-/* Optional Resume Inline Styling (if you want a bordered look) */
+/* Optional Resume Inline Styling */
 .resume-inline {
-  color: #CCCCCC !important;       /* Matches other links */
+  color: #CCCCCC !important;
   font-weight: normal;
   text-decoration: none;
   padding: 3px 8px;
@@ -139,6 +138,26 @@ body {
   background: none;
   text-decoration: none;
 }
+
+/* Why Choose Me / Philosophy Section */
+#philosophy p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #fff;
+}
+#philosophy ul {
+  margin-left: 20px;
+  padding-left: 0;
+  list-style-type: disc;
+}
+#philosophy li {
+  margin: 10px 0;
+}
+#philosophy strong {
+  font-weight: bold;
+}
+
+/* Go Top Button */
 .go-top {
   position: fixed;
   bottom: 20px;
@@ -153,7 +172,6 @@ body {
   z-index: 1000;
   transition: 0.3s;
 }
-
 .go-top:hover {
   background-color: #ffc107;
   transform: translateY(-2px);
