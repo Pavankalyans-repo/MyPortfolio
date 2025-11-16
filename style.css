@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px 20px; /* reduced from 50px */
   background-color: #000;
 }
 .hero h1 {
@@ -40,7 +40,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid yellow;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* reduced from 15px */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -70,21 +70,23 @@ body {
 
 /* Sections */
 .section {
-  padding: 20px 20px;
+  padding: 15px 20px;  /* reduced from 20px */
   max-width: 1000px;
-  margin: auto;
+  margin: 10px auto;  /* reduced vertical margin */
 }
-.section h2 {
-  color: yellow;
-  font-size: 2rem;
-  margin-bottom: 20px;
+
+/* Reduce spacing for headings and paragraphs inside sections */
+.section h2,
+.section h3,
+.section p {
+  margin: 5px 0;
 }
 
 /* Cards */
 .card {
   background: #111;
   padding: 20px;
-  margin: 20px 0;
+  margin: 10px 0;  /* reduced from 15px */
   border-left: 5px solid yellow;
   border-radius: 5px;
   transition: 0.3s;
@@ -97,7 +99,7 @@ body {
   color: yellow;
 }
 .card ul {
-  margin: 10px 0 0 20px;
+  margin: 5px 0 0 20px;
 }
 
 /* Project Grid */
