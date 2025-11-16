@@ -1,72 +1,172 @@
-/* Hero top flex for name + toggle */
-.hero-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  position: relative;
+/* Reset & Basics */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  line-height: 1.6;
 }
 
-/* Position toggle button exactly on right of name */
-#themeToggle {
-  background: none;
-  border: 2px solid yellow;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 30px 20px; /* reduced from 50px */
+  background-color: #000;
+}
+.hero h1 {
   color: yellow;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  margin: 10px 0;
+}
+.hero p {
+  color: #fff;
+  margin: 5px 0;
+}
+.hero p a {
+  color: #CCCCCC !important;
+  text-decoration: none !important;
+  font-weight: normal;
   transition: 0.3s;
 }
-#themeToggle:hover {
-  background-color: yellow;
-  color: black;
+.hero p a:hover {
+  font-weight: bold;
+  color: #CCCCCC !important;
+  text-decoration: none !important;
 }
 
-/* Light Mode Styles */
-body.light-mode {
-  background-color: #fff;
-  color: #111;
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid yellow;
+  margin-bottom: 10px; /* reduced from 15px */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-body.light-mode .hero {
-  background-color: #f0f0f0;
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+  flex-wrap: wrap;
 }
-body.light-mode .hero h1 {
-  color: #222;
+.nav a {
+  color: yellow;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
 }
-body.light-mode .nav {
-  background-color: #eee;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+.nav a:hover {
+  background-color: yellow;
+  color: black;
+  border-radius: 5px;
+  transition: 0.3s;
 }
-body.light-mode .nav a {
-  color: #222;
+
+/* Sections */
+.section {
+  padding: 15px 20px;  /* reduced from 20px */
+  max-width: 1000px;
+  margin: 10px auto;  /* reduced vertical margin */
 }
-body.light-mode .nav a:hover {
-  background-color: #222;
+
+/* Reduce spacing for headings and paragraphs inside sections */
+.section h2,
+.section h3,
+.section p {
+  margin: 5px 0;
+}
+
+/* Cards */
+.card {
+  background: #111;
+  padding: 20px;
+  margin: 10px 0;  /* reduced from 15px */
+  border-left: 5px solid yellow;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255,255,0,0.3);
+}
+.card h3 {
   color: yellow;
 }
-body.light-mode .card {
-  background: #f9f9f9;
-  border-left: 5px solid #222;
+.card ul {
+  margin: 5px 0 0 20px;
 }
-body.light-mode .card h3 {
-  color: #222;
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
-body.light-mode .section a {
-  color: #111 !important;
+
+/* Section Links */
+.section a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-body.light-mode .section a:hover {
-  color: #222 !important;
+.section a:hover {
+  color: #FFD700 !important;
+  text-decoration: underline;
 }
-body.light-mode .resume-inline {
-  color: #222 !important;
-  border: 1px solid #222;
-}
-body.light-mode #themeToggle {
-  border: 2px solid #222;
-  color: #222;
-}
-body.light-mode #themeToggle:hover {
-  background-color: #222;
+
+/* Animated Heading */
+.animated-heading {
   color: yellow;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+.animated-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Resume Inline Styling */
+.resume-inline {
+  color: #CCCCCC !important;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.resume-inline:hover {
+  font-weight: bold;
+  color: #CCCCCC !important;
+  background: none;
+  text-decoration: none;
+}
+
+/* Go Top Button */
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: none;
+  z-index: 1000;
+  transition: 0.3s;
+}
+.go-top:hover {
+  background-color: #ffc107;
+  transform: translateY(-2px);
 }
