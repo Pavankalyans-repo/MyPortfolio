@@ -196,6 +196,7 @@
 <script>
   const goTopBtn = document.getElementById("goTopBtn");
 
+  // Show/hide Go Top button
   window.onscroll = function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       goTopBtn.style.display = "block";
@@ -204,11 +205,25 @@
     }
   };
 
+  // Click to scroll to top
   goTopBtn.addEventListener("click", function(e){
     e.preventDefault();
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
+
+  // Smooth scrolling for nav links
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 </script>
+
 
 </body>
 </html>
