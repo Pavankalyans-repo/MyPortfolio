@@ -173,6 +173,23 @@
       <li>Active content creator & storyteller on Instagram</li>
     </ul>
   </section>
+<a href="#" class="go-top" id="goTopBtn">↑ Top</a>
+<script>
+  const goTopBtn = document.getElementById("goTopBtn");
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      goTopBtn.style.display = "block";
+    } else {
+      goTopBtn.style.display = "none";
+    }
+  };
+
+  goTopBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
 
 </body>
 </html>
