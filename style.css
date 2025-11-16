@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px 30px 20px; /* reduced bottom padding */
+  padding: 50px 20px;
   background-color: #000;
 }
 .hero h1 {
@@ -21,17 +21,15 @@ body {
   color: #fff;
   margin: 5px 0;
 }
-
-/* Hero Top Links - unified light grey, bold on hover */
 .hero p a {
-  color: #CCCCCC !important;       /* Light grey for readability */
+  color: #CCCCCC !important;
   text-decoration: none !important;
   font-weight: normal;
   transition: 0.3s;
 }
 .hero p a:hover {
-  font-weight: bold;               /* Bold on hover */
-  color: #CCCCCC !important;       /* Keep same color */
+  font-weight: bold;
+  color: #CCCCCC !important;
   text-decoration: none !important;
 }
 
@@ -72,7 +70,7 @@ body {
 
 /* Sections */
 .section {
-  padding: 50px 20px;
+  padding: 30px 20px;
   max-width: 1000px;
   margin: auto;
 }
@@ -109,7 +107,7 @@ body {
   gap: 20px;
 }
 
-/* Section Links (Other links inside sections) */
+/* Section Links */
 .section a {
   color: #ffffff !important;
   text-decoration: none;
@@ -121,7 +119,19 @@ body {
   text-decoration: underline;
 }
 
-/* Optional Resume Inline Styling */
+/* Animated Heading */
+.animated-heading {
+  color: yellow;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+.animated-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Resume Inline Styling */
 .resume-inline {
   color: #CCCCCC !important;
   font-weight: normal;
@@ -139,24 +149,6 @@ body {
   text-decoration: none;
 }
 
-/* Why Choose Me / Philosophy Section */
-#philosophy p {
-  margin: 10px 0;
-  line-height: 1.6;
-  color: #fff;
-}
-#philosophy ul {
-  margin-left: 20px;
-  padding-left: 0;
-  list-style-type: disc;
-}
-#philosophy li {
-  margin: 10px 0;
-}
-#philosophy strong {
-  font-weight: bold;
-}
-
 /* Go Top Button */
 .go-top {
   position: fixed;
@@ -168,7 +160,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  display: none; /* hidden by default */
+  display: none;
   z-index: 1000;
   transition: 0.3s;
 }
