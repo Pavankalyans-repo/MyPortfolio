@@ -97,6 +97,12 @@ body {
   border-bottom: 2px solid #FFD700;
   padding-bottom: 5px;
 }
+.section p {
+  margin-bottom: 15px;
+  max-width: 900px;
+  line-height: 1.8;
+  font-size: 1.05em;
+}
 
 /* Cards */
 .card {
@@ -180,22 +186,27 @@ body {
   text-decoration: none;
 }
 
-/* Go Top Button */
+/* Circular Go Top Button */
 .go-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #FFD700;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 215, 0, 0.9);
   color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5em;
   font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+  text-decoration: none;
   display: none;
   z-index: 1000;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .go-top:hover {
-  background-color: #ffc107;
-  transform: translateY(-2px);
+  background-color: rgba(255, 215, 0, 1);
+  transform: translateY(-3px) scale(1.1);
 }
