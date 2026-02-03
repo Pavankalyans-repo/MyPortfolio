@@ -185,6 +185,16 @@ body {
   background: none;
   text-decoration: none;
 }
+/* About Me paragraph styling */
+.about-text {
+  max-width: 850px;      /* prevents lines from being too long */
+  margin: 10px auto;     /* centers the paragraph */
+  font-size: 1.1em;      /* slightly bigger for readability */
+  line-height: 1.8;      /* more space between lines */
+  text-align: justify;    /* neat left-right alignment */
+  text-justify: inter-word;
+  color: #FFFFFF;
+}
 
 /* Circular Go Top Button */
 .go-top {
