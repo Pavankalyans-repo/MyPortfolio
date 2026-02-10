@@ -227,3 +227,30 @@ body {
   background-color: rgba(255, 215, 0, 1);
   transform: translateY(-3px) scale(1.1);
 }
+
+/* Skills Logos Section */
+.skill-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+.skill-logos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(1.2);
+  transition: transform 0.3s, filter 0.3s;
+}
+.skill-logos img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+/* Skills List */
+.skills-list {
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
